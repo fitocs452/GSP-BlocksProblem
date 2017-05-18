@@ -1,0 +1,5 @@
+3
+initial
+(ontable 2) (on 1 2) (on 3 1) (clear 3) (empty)
+goal
+(ontable 1) (ontable 2) (on 3 2) (clear 1) (clear 3) (empty)

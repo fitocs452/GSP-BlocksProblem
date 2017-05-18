@@ -1,0 +1,5 @@
+4
+(unstack 3 1)
+(stack 3 4)
+(pick 2)
+(stack 2 1)

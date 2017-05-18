@@ -1,0 +1,38 @@
+Stack Q=[]
+Plan pi=[]
+Q.push(goal)
+For goal Subgoal
+{
+    Q.push(Subgoal)
+}
+
+While(Q.isNotEmpty)
+{
+    r = Q.pop()
+    if(r.isPredicado())
+    {
+        if(ActualState.cumple(r))
+        {
+            pass;
+        }
+        else
+        {
+            for Accion relevante
+            {
+                Q.push(Accion)
+                for Precondicion in Accion.precondiciones()
+                {
+                    Q.push(Precondicion)
+                    for SubPrecondicion in Precondicion.SubPrecondiciones()
+                    {
+                        Q.push(SubPrecondicion)
+                    }
+                }
+            }
+        }
+    }
+    else if(r.isAccion())
+    {
+        pi.push(r)
+    }
+}
